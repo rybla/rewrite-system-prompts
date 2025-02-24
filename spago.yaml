@@ -1,0 +1,18 @@
+package:
+  name: rewrite-systems
+  dependencies:
+    - aff-promise
+    - arrays
+    - console
+    - debug
+    - effect
+    - maybe
+    - node-fs
+    - ordered-collections
+    - prelude
+    - strings
+    - unordered-collections
+workspace:
+  packageSet:
+    registry: 63.2.1
+  extraPackages: {}
