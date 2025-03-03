@@ -26,7 +26,7 @@ infixl 1 App as %
 instance Show Expr where
   show (MVar s) = s
   show (Var s) = s
-  show (e1 % e2) = "(" <> show e1 <> " " <> show e2 <> ")"
+  show (e1 % e2) = "( " <> show e1 <> " " <> show e2 <> " )"
 
 evaluate :: Array Rule -> Expr -> Array Expr /\ Expr
 evaluate rules e = fixpoint [ e ] (simplify rules) e

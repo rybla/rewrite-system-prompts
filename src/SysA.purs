@@ -57,7 +57,7 @@ A grammar of a programming language defines what expressions can appear in the l
 The grammar for {lang_name} is defined as follows, where `c` is any capitalized letter and `x` is any {lang_name} expression:
 
 ```
-x ::= c | (x x)
+x ::= c | ( x x )
 ```
 
 Some example {lang_name} expressions are:

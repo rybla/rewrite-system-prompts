@@ -4,13 +4,13 @@ A grammar of a programming language defines what expressions can appear in the l
 The grammar for Rofdas is defined as follows, where `c` is any capitalized letter and `x` is any Rofdas expression:
 
 ```
-x ::= c | (x x)
+x ::= c | ( x x )
 ```
 
 Some example Rofdas expressions are:
-- `(A B)`
-- `((B A) C)`
-- `(((C A) A) B)`
+- `( A B )`
+- `( ( B A ) C )`
+- `( ( ( C A ) A ) B )`
 
 The small-step semantics of a programming language is a system of rules that define how to simplify and evaluate an expression in that language.
 A single rule is written as `i -> o`, where `i` is the input expression and `o` is the output expression.
@@ -42,16 +42,16 @@ We write `i => o` to state that expression `i` evalautes to expression `o`.
 The following rule system defines the small-step semantics for Rofdas:
 
 ```
-(A x) -> x
-((B x) y) -> ((y x) x)
-(((C x) y) z) -> ((x z) y)
+( A x ) -> x
+( ( B x ) y ) -> ( ( y x ) x )
+( ( ( C x ) y ) z ) -> ( ( x z ) y )
 ```
 
 Some example evaluations of Rofdas expressions are:
-- `(A B) => B`
-- `((B A) C) => ((C A) A)`
-- `(((C A) A) B) => (B A)`
+- `( A B ) => B`
+- `( ( B A ) C ) => ( ( C A ) A )`
+- `( ( ( C A ) A ) B ) => ( B A )`
 
 Determine what Rofdas expression the following Rofdas expression evaluates to:
 
-`(((C C) (A D)) (A ((B (A D)) C)))`
+`( ( ( C C ) ( A D ) ) ( A ( ( B ( A D ) ) C ) ) )`
