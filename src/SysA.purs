@@ -86,7 +86,7 @@ To use a rule system to evaluate a given expression, do the following:
 1. Try to use each rule in the semantics to simplify the given expression.
    If none of the rules can be used to simplify the given expression, then go to step 2.
    If there are multiple rules that can be used to simplify the expression, you maybe choose any one of them to proceed with in order to finish evaluating the given expression.
-   Next, repeat this step with the newly-evaluated expression.
+   Next, repeat this step with the newly-simplified expression.
    Note that this step could be repeated many times in order to evaluate an expression.
 3. The expression has now been evaluated.
 
