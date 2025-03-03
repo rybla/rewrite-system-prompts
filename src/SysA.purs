@@ -60,7 +60,7 @@ The grammar for {lang_name} is defined as follows, where `c` is any capitalized 
 x ::= c | ( x x )
 ```
 
-Some example {lang_name} expressions are:
+Some examples {lang_name} expressions are:
 - `{expr_ex1}`
 - `{expr_ex2}`
 - `{expr_ex3}`
