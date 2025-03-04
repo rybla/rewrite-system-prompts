@@ -1,5 +1,0 @@
-correct:          : (((D ((C ((C D) D)) D)) D) D)
-grok-3-beta+think : (((C ((C D) D)) D) ((C ((C D) D)) D))
-grok-3-beta       : (((D D) D) ((D D) D))
-o3-mini           : ((C ((C D) D)) D)
-gemini-2.0+think  : (((C ((C D) D)) D) (((C ((C D) D)) D)))
